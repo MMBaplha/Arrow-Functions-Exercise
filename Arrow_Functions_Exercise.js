@@ -41,8 +41,9 @@ function squareAndFindEvens(numbers){
     return evens;
   }
 
-//This one works
-function squareAndFindEvens1(numbers){
+//This one works without {}
+
+function squareAndFindEvens(numbers){
     var squares = numbers.map((num) =>  num ** 2);
     var evens = squares.filter((square) => square % 2 === 0)
     return evens
