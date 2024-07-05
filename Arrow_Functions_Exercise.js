@@ -30,21 +30,4 @@ function squareAndFindEvens(numbers){
 }
 
 //Refactor
-
-function squareAndFindEvens(numbers){
-    var squares = numbers.map((num) => {
-      return num ** 2;
-    });
-    var evens = squares.filter((square) => {
-      return square % 2 === 0;
-    });
-    return evens;
-  }
-
-//This one works without {}
-
-function squareAndFindEvens(numbers){
-    var squares = numbers.map((num) =>  num ** 2);
-    var evens = squares.filter((square) => square % 2 === 0)
-    return evens
-};
+const squareAndFindEvens = numbers => numbers.map(val => val ** 2).filter(square => square % 2 === 0)
